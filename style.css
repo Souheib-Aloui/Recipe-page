@@ -1,0 +1,199 @@
+
+:root {
+      /* ### Primary */
+--Nutmeg: hsl(14, 45%, 36%);
+--Dark-Raspberry: hsl(332, 51%, 32%);
+
+/*### Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--Rose-White: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--Light-Grey: hsl(30, 18%, 87%);
+--Wenge-Brown: hsl(30, 10%, 34%);
+--Dark-Charcoal: hsl(24, 5%, 18%); 
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0 ;
+  padding: 0 ;
+}
+h1,
+h2,
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+}  
+
+ol,
+ul {
+  text-decoration: none;
+}
+body {
+  font-size: 16px;
+  color: var(--Wenge-Brown);
+  font-family: "Outfit" ,"Young Serif" , sans-serif;
+  background-color: var(--Eggshell);
+  padding: 3rem 6rem;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  display: grid;
+  gap: 1rem;
+  background-color: var(--White);
+  max-width: 900px;
+  padding: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+}
+img {
+ max-width: 100%;
+ border-radius: 1rem;
+}
+.recipe-overview {
+  display: grid;
+  gap: 1rem;
+  border-bottom: 1px solid var(--Light-Grey) ;
+}
+.main-title {
+  color: var(--Dark-Charcoal);
+  font-family: "Outfit" ;
+  font-weight: 700 ;
+  font-size: 3.75rem;
+}
+@media (min-width:750.2px) and (max-width:900px) {
+  .main-title  {
+    font-size: 2.875rem;
+  }
+   
+}
+
+@media (min-width: 600px) and (max-width:750px) {
+  .main-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 599px) {
+   body {
+    padding: 0;
+   }
+
+   .container {
+    padding: 1rem;
+    border: none;
+    border-radius: none;
+  }
+  
+ 
+  .main-title {
+    font-size: 1.75rem;
+  }
+}
+.description {
+  font-size: 1.3rem;
+  line-height: 26px;
+}
+ 
+.preparation-background {
+  background-color: var(--Rose-White);
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+
+
+.recipe-overview-mini-title {
+  color: var(--Dark-Raspberry);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prep-list {
+  list-style-position: inside;
+}
+
+.prep-list li,
+.ingredients-list li {
+  margin-bottom: 1rem;
+}
+
+
+.list-category  {
+  padding-left: 1rem;
+  color: var(--Dark-Charcoal);
+  font-weight: 700 ;
+}
+
+
+.ingredients-title,
+.instructions-title,
+.nutrition-title {
+  color: var(--Nutmeg);
+  font-size: 2.5rem;
+  font-family: "Outfit";
+}
+
+.ingredients-list {
+  list-style: inside;
+  margin-bottom: 1rem;
+}
+
+.ingredients-content {
+ padding-left: 1rem ;
+}
+
+.ingredients-list li::marker,
+.instructions-list li::marker {
+  color: var(--Nutmeg);
+}
+
+
+.instructions-title {
+  margin-bottom: 1rem;
+}
+.instructions-list {
+  list-style-position: inside;
+}
+
+.instructions-list  li {
+  margin-bottom: 1rem;
+  line-height: 24px;
+  /*no idea how to indent the second line of text , yet*/
+}
+
+
+.instructions {
+  border-bottom: 1px solid var(--Light-Grey) ;
+}
+
+.nutrition-description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.border-row {
+  border-bottom: 1px solid var(--Light-Grey);
+}
+tr > * {
+  padding: 1rem 1.5rem;
+}
+.amount {
+  color:var(--Nutmeg);
+  font-weight: 700;
+}
+
